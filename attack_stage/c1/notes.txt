@@ -1,0 +1,14 @@
+Challenge: 
+Login as test@thebodgeitstore.com
+
+Attack:
+1) Navigate to /bodgeit/login.jsp and input the username "test@thebodgeitstore.com"
+2) Input the password "password" and click the "Login" button.
+
+Vulnerability:
+Insecure authentication, since "password" is one of the most commonly used passwords
+
+Solution:
+Enforce a secure password policy, mandating users to choose a password which has a mix of upper and
+lower cases, contains numbers and/or special characters, and is at least 8-characters long.  
+For additional security, two-factor authentication can be deployed.
