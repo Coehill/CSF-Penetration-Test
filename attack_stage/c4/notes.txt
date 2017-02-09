@@ -1,0 +1,13 @@
+Challenge: 
+Find hidden content as a non admin user
+
+Attack:
+1) Inspect source code of /bodgeit/login.jsp to look for clues
+2) Upon finding the line:
+<!-- td align="center" width="16%"><a href="admin.jsp">Admin</a></td-->
+Navigate to /bodgeit/admin.jsp
+3) You have now found an insecured admin panel for the Bodgeit Store Website
+
+Vulnerability:
+
+Solution:
