@@ -1,0 +1,16 @@
+Challenge: 
+Level 1: Display a popup using: <script>alert("XSS")</script>
+
+Attack:
+1) Navigate to /bodgeit/search.jsp
+2) Inject <script>alert("XSS")</script> into the text box and press the "search" button
+3) A popup will be generated with the text "XSS"
+
+Vulnerability:
+Cross Site Scripting vulnerability in search form - insecure handling of untrusted data
+
+Solution:
+Implement input sanitisation on search form by setting search criteria on untrusted data.
+This may be done by only accepting approved characters such as alphanumeric characters, 
+which is a whitelist.  It may also be done by rejecting unapproved characters such as 
+special characters (<>/\'...) in the form of a blacklist.

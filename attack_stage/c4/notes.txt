@@ -6,8 +6,10 @@ Attack:
 2) Upon finding the line:
 <!-- td align="center" width="16%"><a href="admin.jsp">Admin</a></td-->
 Navigate to /bodgeit/admin.jsp
-3) You have now found an insecured admin panel for the Bodgeit Store Website
+3) You have now found an insecured admin page for the Bodgeit Store Website
 
 Vulnerability:
+Insecure admin page
 
 Solution:
+Remove commented code pointing to admin panel from html source code; password-protect admin page.
