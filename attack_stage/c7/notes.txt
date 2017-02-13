@@ -1,0 +1,17 @@
+Challenge: 
+Level 2: Display a popup using: <script>alert("XSS")</script>
+
+Attack:
+1) Navigate to /bodgeit/register.jsp and enter john@doe.com<script>alert("XSS")</script> into the
+   form.  Press submit.
+3) Since the email is displayed at the top-right corner of the page once you are logged in, the 
+   XSS script will also be run and so a popup with the text "XSS" appears
+
+Vulnerability:
+Cross Site Scripting vulnerability in search form - insecure handling of untrusted data
+
+Solution:
+Implement input sanitisation on search form by setting search criteria on untrusted data.
+This may be done by only accepting approved characters such as alphanumeric characters, 
+which is a whitelist.  It may also be done by rejecting unapproved characters such as 
+special characters (<>/\'...) in the form of a blacklist.
