@@ -1,0 +1,14 @@
+Challenge: 
+Change your password via a GET request
+
+Attack:
+1) Login as any user.  I used user: test@thebodgeitstore.com and pass: password
+2) Navigate to the password-changing page by clicking on the user's email at the top-right corner
+   of the page.  Enter a password.  
+3) Inspect the form element and find the following line:
+   <form method="POST">
+4) Change "POST" to "GET" and click the "Submit" button
+
+Vulnerability:
+
+Solution:
