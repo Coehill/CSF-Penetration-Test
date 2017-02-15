@@ -1,0 +1,13 @@
+Challenge: 
+Level 1?: Login as Admin (admin@thebodgeitstore.com) 
+
+Attack:
+1) Navigate to /bodgeit/login.jsp
+2) Enter : admin@thebodgeitstore.com' or '1'='1 
+into the username field and press login. 
+
+Vulnerability:
+SQL injection, the ' symbol breaks the SQL query, and we can then post 
+'1'='1 (last ' is in the SQL code ) to return true.  
+
+Solution:
