@@ -1,2 +1,2 @@
-# CSF_Penetration_Test
+# CSF-Penetration-Test
 Coursework for Cyber Security Fundamentals
